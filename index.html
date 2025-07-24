@@ -6,7 +6,14 @@
     <!-- tailwind cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- google fonts link -->
+    <!-- google font noto serif link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font inter link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,15 +33,38 @@
   <body>
     <!-- header start -->
     <header>
+      <!-- nav -->
       <nav class="container nav-style">
         <img src="./assets/logo.png" alt="Logo" />
         <ul class="tabs-style">
           <li><a href="#">Home</a></li>
           <li><a class="color-secondary" href="#">Shop</a></li>
           <li><a class="color-secondary" href="#">About us</a></li>
-          <span><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></span>
+          <span
+            ><a href="#"
+              ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+            ></span
+          >
         </ul>
       </nav>
+      <!-- banner -->
+      <section class="container banner">
+        <div>
+          <h2>
+            <span class="noto-serif-primary">ALWAYS </span
+            ><span class="color-orange-primary"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </h2>
+          <p class="color-secondary">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <img src="./assets/hero-flower.png" alt="" />
+      </section>
     </header>
   </body>
 </html>

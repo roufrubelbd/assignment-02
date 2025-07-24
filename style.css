@@ -12,17 +12,25 @@
   font-weight: 400;
   font-style: normal;
 }
+.noto-serif-primary {
+  font-family: "Noto Serif", serif;
+}
 .color-primary {
   color: #000;
 }
 .color-secondary {
   color: rgba(0, 0, 0, 0.5);
 }
+.color-orange-primary {
+  color: rgb(233, 90, 8)
+}
 
 .container {
   max-width: 1280px;
   margin: auto;
 }
+
+/* nav style */
 .nav-style {
   display: flex;
   justify-content: space-between;
@@ -40,11 +48,40 @@
 }
 
 
+/* banner style */
+ .banner{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+ .banner h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 700;
+ }
+ .banner p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
 
+
+
+
+/* responsive style media query */
 @media screen and (max-width: 576px) {
 
   .tabs-style li {
     display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .container{
+    padding: 0 20px;  
   }
   
 }
