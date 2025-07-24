@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwind cdn link -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-     <!-- google fonts link -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- font awesome link -->
-
-<!-- custom css -->
-<link rel="stylesheet" href="./style.css">
+    <!-- font awesome link -->
+    <script
+      src="https://kit.fontawesome.com/1a38e55675.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Flowers</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header start -->
-     <header>
-        <nav class="container flex items-center justify-between">
-            <img src="./assets/logo.png" alt="Logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-     </header>
-</body>
+    <header>
+      <nav class="container nav-style">
+        <img src="./assets/logo.png" alt="Logo" />
+        <ul class="tabs-style">
+          <li><a href="#">Home</a></li>
+          <li><a class="color-secondary" href="#">Shop</a></li>
+          <li><a class="color-secondary" href="#">About us</a></li>
+          <span><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></span>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

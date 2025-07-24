@@ -5,15 +5,46 @@
 }
 
 
-/* primary font */
+/* Shared styles */
 .inter-primary {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+.color-primary {
+  color: #000;
+}
+.color-secondary {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .container {
   max-width: 1280px;
   margin: auto;
+}
+.nav-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.tabs-style {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.tabs-style :nth-child(1) a {
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+  .tabs-style li {
+    display: none;
+  }
+  
 }
