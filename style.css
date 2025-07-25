@@ -251,6 +251,21 @@
   cursor: pointer;
   font-weight: bold;
 }
+/* footer style */
+.footer-section {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.first-div, .second-div, .third-div, .social-icons {
+  width: 20%;
+}
+ 
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
 
 
 /* responsive style media query */
@@ -312,4 +327,42 @@
     grid-row: span 1;
     font-size: 1.3rem;
   }
+
+  .subscription{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 300px;
+}
+.subscription h5 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:#fff
+}
+.subscription input[type="email"] {
+  padding: 8px;
+  width: 250px;
+}
+.subscription button {
+  padding: 8px 10px;
+}
+
+.footer-section {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;  
+  gap: 15px;
+  width: 100%;
+}
+.first-div, .second-div, .third-div, .social-icons {
+  width: 80%;
+}
+ 
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
 }
