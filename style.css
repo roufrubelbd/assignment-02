@@ -1,9 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 /* Shared styles */
 .inter-primary {
@@ -47,57 +46,56 @@
   font-weight: 600;
 }
 
-
 /* banner style */
- .banner{
+.banner {
   display: flex;
   gap: 16px;
   align-items: center;
   justify-content: space-between;
   margin-top: 100px;
- }
- .banner h2 {
+}
+.banner h2 {
   font-size: 4rem;
   line-height: 1.2;
   font-weight: 700;
- }
- .banner p{
+}
+.banner p {
   margin-top: 20px;
   margin-bottom: 20px;
- }
+}
 
- /* plants style */
- .plants {
-   margin-top: 150px;
-   margin-bottom: 100px;
- }
- .plants h3 {
-   font-size: 3rem;
-   line-height: 1.2;
-   font-weight: 700;
- }
- .plants p {
-   margin: 20px auto;
- }
+/* plants style */
+.plants {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.plants h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.plants p {
+  margin: 20px auto;
+}
 
- /* plant card style */
- .cards{
+/* plant card style */
+.cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
- }
- .plant-card{
+}
+.plant-card {
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
- }
- .plant-card  img {
+}
+.plant-card img {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0px 0px;
- }
- .plant-card button{
+}
+.plant-card button {
   background-color: rgb(233, 90, 8);
   color: #fff;
   padding: 8px 10px;
@@ -106,34 +104,115 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
- }
- .plant-card button:hover {
+}
+.plant-card button:hover {
   background-color: rgb(200, 70, 8);
- }
+}
 
- /* plant-lover styles */
- .plant-lover{
+/* plant-lover styles */
+.plant-lover {
   margin-top: 250px;
   margin-bottom: 100px;
- }
- .plant-lover h3 {
+}
+.plant-lover h3 {
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: 700; 
+  font-weight: 700;
   margin-bottom: 20px;
 }
 .plant-lover ul li {
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
+  list-style: disc;
 }
-#trusted-badge{
+#trusted-badge {
   width: 286px;
   height: 286px;
 }
 
+/* latest deals style */
+.latest-deals {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.latest-deals h3 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.latest-deals p {
+  margin: 20px auto;
+}
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+#bloom-plant {
+  background-image: url("./assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#bloom-plant button {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#zabo-plant {
+  background-image: url("./assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 2rem;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#zabo-plant button {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#ana-plant {
+  background-image: url("./assets/deal-ana.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #fff;
+  font-size: 1.3rem;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+#ana-plant button {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
 
 /* responsive style media query */
 @media screen and (max-width: 576px) {
-
   .tabs-style li {
     display: none;
   }
@@ -142,37 +221,53 @@
     flex-direction: column-reverse;
   }
   .banner h2 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  font-weight: 700;
- }
-  .container{
-    padding: 0 20px;  
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
   }
-   .plants {
-   margin-top: 50px;
-   margin-bottom: 50px;
- }
-  .cards{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
- }
+  .container {
+    padding: 0 20px;
+  }
+  .plants {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 
- .plant-lover{
-  margin-top: 50px;
-  margin-bottom: 20px;
- }
- .plant-lover h3{
-  font-size: 1.5rem;
-  margin-top: 10px;
- }
- .plant-lover ul li{
-  font-size: 1.2rem;
-  margin-bottom: 20px;
- }
- #trusted-badge{
-  display: none;
- }
-  
+  .plant-lover {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .plant-lover h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .plant-lover ul li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  #trusted-badge {
+    display: none;
+  }
+  .image-collage {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .image-collage > div {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  #zabo-plant {
+    grid-column: span 1;
+    grid-row: span 1;
+    font-size: 1.3rem;
+  }
 }
